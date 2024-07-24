@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            background: linear-gradient(to right, #ff6f91, #ff9671);
+            font-family: 'Press Start 2P', cursive;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden; /* Prevent body from scrolling */
+        }
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 400px;
+            height: 100%; /* Set height to 100% */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding-right: 20px; /* Add some padding to avoid cut off text on the right */
+        }
+        .chat-bubble {
+            background: #ffcccb;
+            border-radius: 15px;
+            padding: 15px 20px;
+            margin: 10px 0;
+            position: relative;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #000;
+            line-height: 1.5; /* Added line height for better readability */
+        }
+        .chat-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-top-color: #ffcccb;
+            border-bottom: 0;
+            border-right: 0;
+            margin-left: -15px;
+            margin-bottom: -15px;
+        }
+        .chat-bubble:nth-child(2n) {
+            background: #d4a5a5;
+        }
+        .chat-bubble:nth-child(2n)::after {
+            left: auto;
+            right: 10px;
+            border-top-color: #d4a5a5;
+            border-left: 0;
+            border-right: 15px solid transparent;
+        }
+        .sender {
+            font-weight: bold;
+            color: #d81b60;
+            margin-bottom: 5px;
+        }
+        .message {
+            margin: 0;
+            font-size: 12px;
+        }
+        .flower {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-bubble">
+            <div class="sender">You</div>
+            <p class="message">Hey there pookie! 🌟</p>
+        </div>
+        <div class="chat-bubble">
+            <div class="sender">You</div>
+            <p class="message">Happy Birthday Loveeeeeeeee!🎉🎂</p>
+        </div>
+        <div class="chat-bubble">
+            <div class="sender">You</div>
+            <p class="message">I want you to know how much you mean to me. Every moment spent with you is like a beautiful dream come true.
+                               Your smile lights up my life. I remember the day we started talking. How i awkwardly came to you and then eventually we hit it off.
+                               We clicked instantly, out humour matched too. You really bring a light to my day. During my working hours as well i keep thinking about 
+                               how you must be enjoying today, what different you must be doing today and above all about how i will get to hear all that in details lol.
+                               Your coming up with fresh gossips and the way you enoy nature and click new pictures 
+                               and send to me, all this just fuels the fact that i love you so very very much and i'll make you mine. 
+                               I wish you all the happiness in the world my pookie, my love, my baby, my jaan. Enjoy your day ❤️🌷</p>
+        </div>
+        <div class="chat-bubble">
+            <div class="sender">You</div>
+            <p class="message">forever yours, 🌼</p>
+        </div>
+        <div class="chat-bubble">
+            <div class="sender">You</div>
+            <p class="message">and yours only</p>
+        </div>
+    </div>
+</body>
+</html>
